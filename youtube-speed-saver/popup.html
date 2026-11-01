@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Video Speed Saver</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="yss-popup-page">
+    <main class="yss-popup-card">
+      <header class="yss-popup-header">
+        <div>
+          <p class="yss-popup-kicker">Video</p>
+          <h1>Speed Saver</h1>
+        </div>
+        <span class="yss-popup-badge" id="yss-popup-time-left" title="Time left">--</span>
+      </header>
+
+      <section class="yss-popup-panel" aria-live="polite">
+        <p class="yss-popup-message" id="yss-popup-message" hidden>No video detected.</p>
+
+        <div class="yss-popup-stats" id="yss-popup-stats">
+          <div class="yss-popup-row">
+            <span>Original:</span>
+            <strong id="yss-original">--</strong>
+          </div>
+          <div class="yss-popup-row">
+            <span>Time left:</span>
+            <strong id="yss-time-left">--</strong>
+          </div>
+          <div class="yss-popup-row">
+            <span>New length:</span>
+            <strong id="yss-actual-watch">--</strong>
+          </div>
+          <div class="yss-popup-row">
+            <span>Saved:</span>
+            <strong id="yss-saved">--</strong>
+          </div>
+          <div class="yss-popup-row">
+            <span>Saved %:</span>
+            <strong id="yss-saved-percent">--</strong>
+          </div>
+        </div>
+      </section>
+
+      <p class="yss-popup-note">Time saved and time left use the current playback rate.</p>
+
+      <label class="yss-popup-toggle">
+        <span>
+          <strong>On-video toast</strong>
+          <small>Show when playback rate changes</small>
+        </span>
+        <input type="checkbox" id="yss-overlay-toggle">
+        <span class="yss-toggle-track" aria-hidden="true">
+          <span class="yss-toggle-thumb"></span>
+        </span>
+      </label>
+
+      <label class="yss-popup-toggle">
+        <span>
+          <strong>Keep visible</strong>
+          <small>Stay on screen instead of fading</small>
+        </span>
+        <input type="checkbox" id="yss-persistent-toggle">
+        <span class="yss-toggle-track" aria-hidden="true">
+          <span class="yss-toggle-thumb"></span>
+        </span>
+      </label>
+
+      <button class="yss-popup-reset" type="button" id="yss-reset-position">
+        Reset toast position
+      </button>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
