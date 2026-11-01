@@ -1,0 +1,16 @@
+{
+  "name": "video-speed-saver",
+  "version": "1.1.1",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rohantheb0ss/video-speed-saver.git"
+  },
+  "description": "Chrome extension for playback-adjusted video length, time saved, and time left.",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check youtube-speed-saver/content.js && node --check youtube-speed-saver/background.js && node --check youtube-speed-saver/popup.js"
+  },
+  "engines": { "node": ">=22" }
+}

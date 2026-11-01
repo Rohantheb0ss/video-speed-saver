@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+*.zip
+*.crx
+*.pem
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+# Earlier icon drafts are retained locally but are no longer packaged.
+youtube-speed-saver/icons/icon-*.png
